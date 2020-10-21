@@ -3,7 +3,6 @@ basic.forever(function () {
         for (let X = 0; X <= 4; X++) {
             led.plot(X, Y)
             basic.pause(100)
-            basic.clearScreen()
             break;
         }
     }
@@ -11,7 +10,6 @@ basic.forever(function () {
         for (let X = 0; X <= 4; X++) {
             led.plot(X + 1, 4 - Y)
             basic.pause(100)
-            basic.clearScreen()
             break;
         }
     }
@@ -19,7 +17,6 @@ basic.forever(function () {
         for (let X = 0; X <= 4; X++) {
             led.plot(X + 2, Y)
             basic.pause(100)
-            basic.clearScreen()
             break;
         }
     }
@@ -27,7 +24,6 @@ basic.forever(function () {
         for (let X = 0; X <= 4; X++) {
             led.plot(X + 3, 4 - Y)
             basic.pause(100)
-            basic.clearScreen()
             break;
         }
     }
@@ -35,8 +31,8 @@ basic.forever(function () {
         for (let X = 0; X <= 4; X++) {
             led.plot(X + 4, Y)
             basic.pause(100)
-            basic.clearScreen()
             break;
         }
     }
+    basic.clearScreen()
 })
